@@ -23,7 +23,7 @@ import {
   Smartphone
 } from "lucide-react";
 
-const LOGO_URL = "https://cdn.imagetourl.cloud/anonymous/ebr3nj0j.jpg";
+const LOGO_URL = "https://cdn.imagetourl.cloud/uploads/o1clwsnk.png";
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
