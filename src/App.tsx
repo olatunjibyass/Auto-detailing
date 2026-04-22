@@ -97,37 +97,19 @@ export default function App() {
           <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/80 to-transparent" />
         </div>
 
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 w-full relative z-10 py-12 text-white">
-          <div className="animate-fade-in stagger-1">
-            <img 
-              src={LOGO_URL} 
-              alt="Brand Identity" 
-              className="h-32 w-auto mb-10 drop-shadow-[0_0_25px_rgba(16,185,129,0.3)] bg-white/5 p-4 rounded-xl backdrop-blur-sm border border-white/10"
-              referrerPolicy="no-referrer"
-            />
-            <h1 className="text-7xl md:text-[140px] leading-[0.8] mb-8 font-heading">
-              Your Car.<br/><span className="text-brand">Spotless.</span>
+        <div className="max-w-7xl mx-auto px-6 w-full relative z-10 py-12 text-white text-center md:text-left">
+          <div className="animate-fade-in stagger-1 flex flex-col items-center md:items-start">
+            <h1 className="text-[15vw] md:text-[200px] leading-[0.75] mb-12 font-heading tracking-tighter uppercase">
+              Your Car.<br/>
+              <span className="text-brand drop-shadow-[0_0_30px_rgba(16,185,129,0.3)]">Spotless.</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/70 mb-12 max-w-lg font-light leading-relaxed">
+            <p className="text-2xl md:text-3xl text-white/80 mb-14 max-w-2xl font-light leading-snug">
               Ottawa & Gatineau's premier mobile detailing service. Professional care delivered directly to your driveway.
             </p>
-            <div className="flex flex-wrap gap-6">
-              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="bg-brand text-dark border-2 border-brand px-10 py-4 font-heading text-xl tracking-widest hover:bg-transparent hover:text-brand transition-all uppercase">Book Now</a>
-              <a href={PHONE_HREF} className="border-2 border-white px-10 py-4 font-heading text-xl tracking-widest hover:border-brand hover:text-brand transition-all uppercase">Call Us</a>
+            <div className="flex flex-wrap gap-8 justify-center md:justify-start">
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="bg-brand text-dark border-2 border-brand px-12 py-5 font-heading text-2xl tracking-widest hover:bg-transparent hover:text-brand transition-all uppercase shadow-[0_10px_40px_rgba(16,185,129,0.2)]">Book Now</a>
+              <a href={PHONE_HREF} className="border-2 border-white px-12 py-5 font-heading text-2xl tracking-widest hover:border-brand hover:text-brand transition-all uppercase">Call Us</a>
             </div>
-          </div>
-
-          <div className="hidden md:flex flex-col justify-center items-end gap-16 animate-fade-in stagger-3">
-            {[
-              { val: "500+", label: "Vehicles" },
-              { val: "5-Star", label: "Rating" },
-              { val: "100%", label: "Mobile" }
-            ].map((stat, i) => (
-              <div key={i} className="text-right border-r-4 border-brand pr-8">
-                <span className="block text-6xl font-heading text-brand leading-none">{stat.val}</span>
-                <span className="block text-xl uppercase tracking-widest text-white/40">{stat.label}</span>
-              </div>
-            ))}
           </div>
         </div>
       </header>
