@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Bebas Neue", sans-serif;
+
+  --color-brand: #10b981;
+  --color-secondary: #3b82f6;
+  --color-dark: #020617;
+}
+
+@layer base {
+  body {
+    @apply bg-dark text-white font-sans antialiased overflow-x-hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading uppercase tracking-wider;
+  }
+}
+
+/* Fade-in animation */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+  display: flex;
+}
+
+.bg-brand {
+  background-color: var(--color-brand);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.text-brand {
+  color: var(--color-brand);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.border-brand {
+  border-color: var(--color-brand);
+}
+
+.border-secondary {
+  border-color: var(--color-secondary);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.3s; }
+.stagger-3 { animation-delay: 0.5s; }
+
+/* Service card hover effect */
+.service-card {
+  @apply relative p-8 bg-white/5 border border-white/10 transition-all duration-300;
+}
+
+.service-card::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-0 h-1 bg-brand transition-all duration-500;
+}
+
+.service-card:hover::after {
+  @apply w-full;
+}
+
+.service-card:hover {
+  @apply border-brand/30 bg-white/[0.08];
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #10b981;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #059669;
+}
+
+input, select, textarea {
+  @apply bg-white/5 border border-white/10 rounded-sm py-3 px-4 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand transition-all;
+}
