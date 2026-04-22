@@ -197,7 +197,7 @@ export default function App() {
               { id: "02", title: "Interior Detail", desc: "Steam clean, shampoo extraction, leather conditioning, and deep vacuum.", price: "120" },
               { id: "03", title: "Full Detail", desc: "Our most popular combo. The best of both interior and exterior care.", price: "180" },
               { id: "04", title: "Pet Hair Removal", desc: "Deep elimination of stubborn pet hair from carpets, seats, and crevices.", price: "30" },
-              { id: "05", title: "Ceramic Coating", desc: "9H nanotechnology coating for long-term depth and hydrophobics.", price: "500" },
+              { id: "05", title: "Ceramic Coating", desc: "9H nanotechnology coating for long-term depth and hydrophobics.", price: "699" },
               { id: "06", title: "Engine Detail", desc: "Safe degreasing and cosmetic dressing of the engine bay area.", price: "50" },
             ].map((s, i) => (
               <div key={i} className="service-card group animate-fade-in" style={{ animationDelay: `${i * 0.1}s` }}>
