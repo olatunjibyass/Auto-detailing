@@ -47,11 +47,11 @@ export default function App() {
           <div className="flex items-center gap-4">
             <img 
               src={LOGO_URL} 
-              alt="Shine Auto Logo" 
+              alt="Shine Auto Zone Logo" 
               className="h-14 w-auto drop-shadow-md"
               referrerPolicy="no-referrer"
             />
-            <span className="font-heading text-xl sm:text-2xl tracking-tighter text-brand">Shine Auto</span>
+            <span className="font-heading text-xl sm:text-2xl tracking-tighter text-brand">Shine Auto Zone</span>
           </div>
 
           <div className="hidden md:flex items-center gap-8 font-heading text-lg tracking-widest">
@@ -149,7 +149,7 @@ export default function App() {
              <div className="absolute bottom-0 right-0 w-24 h-24 border-r-2 border-b-2 border-brand translate-x-1 translate-y-1" />
              <img 
                src={LOGO_URL} 
-               alt="Shine Auto Premium Logo" 
+               alt="Shine Auto Zone Premium Logo" 
                className="w-full max-w-md h-auto drop-shadow-2xl group-hover:scale-105 transition-transform duration-700 relative z-10 p-6"
                referrerPolicy="no-referrer"
              />
@@ -160,7 +160,7 @@ export default function App() {
                 <h2 className="text-6xl md:text-8xl mb-8 leading-tight font-heading">Precision in<br/><span className="text-brand">Every Pixel.</span></h2>
                 <div className="space-y-6 text-lg text-white/60 font-light leading-relaxed max-w-xl">
                   <p>
-                    Founded on a passion for automotive excellence, Shine Auto was built to serve vehicle owners who demand a standard beyond the ordinary. We don't just wash cars; we curate them.
+                    Founded on a passion for automotive excellence, Shine Auto Zone was built to serve vehicle owners who demand a standard beyond the ordinary. We don't just wash cars; we curate them.
                   </p>
                   <p>
                     Based right here in Ottawa & Gatineau, our mobile unit is self-sufficient with onboard power and ultra-purified water, allowing us to perform high-tier restorations anywhere your day takes you. 
@@ -322,12 +322,12 @@ export default function App() {
       <footer className="py-20 bg-dark border-t border-white/5 text-center">
          <img 
             src={LOGO_URL} 
-            alt="Shine Auto Logo" 
+            alt="Shine Auto Zone Logo" 
             className="h-32 mx-auto mb-8 drop-shadow-xl opacity-90 hover:opacity-100 transition-opacity"
             referrerPolicy="no-referrer"
           />
          <p className="font-heading text-lg tracking-[0.3em] text-white/20">
-           © 2024 Shine Auto · CRAFTED IN OTTAWA & GATINEAU
+           © 2024 Shine Auto Zone · CRAFTED IN OTTAWA & GATINEAU
          </p>
       </footer>
     </div>
