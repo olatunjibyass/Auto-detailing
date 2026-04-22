@@ -48,10 +48,10 @@ export default function App() {
             <img 
               src={LOGO_URL} 
               alt="Shine Auto Zone Logo" 
-              className="h-12 w-auto"
+              className="h-14 w-auto drop-shadow-md"
               referrerPolicy="no-referrer"
             />
-            <span className="font-heading text-2xl tracking-tighter sm:block hidden text-brand">Shine Auto Zone</span>
+            <span className="font-heading text-xl sm:text-2xl tracking-tighter text-brand">Shine Auto Zone</span>
           </div>
 
           <div className="hidden md:flex items-center gap-8 font-heading text-lg tracking-widest">
@@ -102,7 +102,7 @@ export default function App() {
             <img 
               src={LOGO_URL} 
               alt="Brand Identity" 
-              className="h-24 w-auto mb-8 drop-shadow-lg"
+              className="h-32 w-auto mb-10 drop-shadow-[0_0_25px_rgba(16,185,129,0.3)] bg-white/5 p-4 rounded-xl backdrop-blur-sm border border-white/10"
               referrerPolicy="no-referrer"
             />
             <h1 className="text-7xl md:text-[140px] leading-[0.8] mb-8 font-heading">
@@ -144,13 +144,13 @@ export default function App() {
       {/* 4. About Section */}
       <section className="py-24 bg-dark">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
-          <div className="relative group p-12 bg-white/5 border border-white/10 flex items-center justify-center animate-fade-in stagger-1 overflow-hidden rounded-lg">
-             <div className="absolute top-0 left-0 w-24 h-24 border-l-2 border-t-2 border-brand -translate-x-3 -translate-y-3" />
-             <div className="absolute bottom-0 right-0 w-24 h-24 border-r-2 border-b-2 border-brand translate-x-3 translate-y-3" />
+          <div className="relative group p-12 bg-white/10 border border-white/20 flex items-center justify-center animate-fade-in stagger-1 overflow-hidden rounded-2xl shadow-2xl">
+             <div className="absolute top-0 left-0 w-24 h-24 border-l-2 border-t-2 border-brand -translate-x-1 -translate-y-1" />
+             <div className="absolute bottom-0 right-0 w-24 h-24 border-r-2 border-b-2 border-brand translate-x-1 translate-y-1" />
              <img 
                src={LOGO_URL} 
                alt="Shine Auto Zone Premium Logo" 
-               className="w-full max-w-md h-auto drop-shadow-2xl group-hover:scale-105 transition-transform duration-700 relative z-10"
+               className="w-full max-w-md h-auto drop-shadow-2xl group-hover:scale-105 transition-transform duration-700 relative z-10 p-6"
                referrerPolicy="no-referrer"
              />
              <div className="absolute inset-0 bg-brand/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
@@ -322,8 +322,8 @@ export default function App() {
       <footer className="py-20 bg-dark border-t border-white/5 text-center">
          <img 
             src={LOGO_URL} 
-            alt="Logo" 
-            className="h-24 mx-auto mb-8 drop-shadow-lg"
+            alt="Shine Auto Zone Logo" 
+            className="h-32 mx-auto mb-8 drop-shadow-xl opacity-90 hover:opacity-100 transition-opacity"
             referrerPolicy="no-referrer"
           />
          <p className="font-heading text-lg tracking-[0.3em] text-white/20">
