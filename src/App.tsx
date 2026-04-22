@@ -166,9 +166,9 @@ export default function App() {
       </section>
 
       {/* 5. Services Section */}
-      <section id="services" className="py-24 bg-white/5">
+      <section id="services" className="pt-24 pb-12 bg-white/5">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-20 animate-fade-in">
+          <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-6xl md:text-8xl mb-4">The <span className="text-brand">Packages</span></h2>
             <p className="tracking-[0.5em] text-white/40 uppercase font-bold text-sm">Professional Care Options</p>
           </div>
@@ -197,9 +197,9 @@ export default function App() {
       </section>
 
       {/* 6. How It Works */}
-      <section id="how-it-works" className="py-24 bg-dark overflow-hidden">
+      <section id="how-it-works" className="pt-12 pb-24 bg-dark overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-24">
+          <div className="text-center mb-12">
             <h2 className="text-6xl md:text-8xl">The <span className="text-brand">Flow</span></h2>
           </div>
 
